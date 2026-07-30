@@ -1,0 +1,456 @@
+/* ==========================================================
+   Ziha Studio Design System
+   forms.css
+   Version: 1.0
+==========================================================*/
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.form{
+    display:flex;
+    flex-direction:column;
+    gap:var(--space-lg);
+}
+
+
+/* ==========================================================
+   FORM GROUP
+========================================================== */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:.65rem;
+}
+
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.form-label{
+
+    font-size:.95rem;
+
+    font-weight:var(--fw-semibold);
+
+    color:var(--color-text);
+
+    user-select:none;
+
+}
+
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.form-input,
+.form-textarea,
+.form-select{
+
+    width:100%;
+
+    min-height:56px;
+
+    padding:0 1rem;
+
+    background:var(--color-surface);
+
+    border:1px solid var(--color-border);
+
+    border-radius:var(--radius-md);
+
+    color:var(--color-text);
+
+    font-size:1rem;
+
+    transition:
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal),
+        background-color var(--transition-normal);
+
+}
+
+
+/* ==========================================================
+   TEXTAREA
+========================================================== */
+
+.form-textarea{
+
+    min-height:180px;
+
+    resize:vertical;
+
+    padding:1rem;
+
+}
+
+
+/* ==========================================================
+   PLACEHOLDER
+========================================================== */
+
+.form-input::placeholder,
+.form-textarea::placeholder{
+
+    color:var(--color-text-muted);
+
+}
+
+
+/* ==========================================================
+   FOCUS
+========================================================== */
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus{
+
+    border-color:var(--color-primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.form-input:hover,
+.form-textarea:hover,
+.form-select:hover{
+
+    border-color:var(--color-primary-light);
+
+}
+
+
+/* ==========================================================
+   DISABLED
+========================================================== */
+
+.form-input:disabled,
+.form-textarea:disabled,
+.form-select:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ==========================================================
+   ERROR
+========================================================== */
+
+.form-error{
+
+    border-color:var(--color-danger);
+
+}
+
+.form-error:focus{
+
+    box-shadow:0 0 0 4px rgba(220,38,38,.12);
+
+}
+
+
+/* ==========================================================
+   SUCCESS
+========================================================== */
+
+.form-success{
+
+    border-color:var(--color-success);
+
+}
+
+.form-success:focus{
+
+    box-shadow:0 0 0 4px rgba(22,163,74,.12);
+
+}
+
+
+/* ==========================================================
+   HELP TEXT
+========================================================== */
+
+.form-help{
+
+    font-size:.875rem;
+
+    color:var(--color-text-muted);
+
+}
+
+
+/* ==========================================================
+   ERROR MESSAGE
+========================================================== */
+
+.form-error-text{
+
+    font-size:.875rem;
+
+    color:var(--color-danger);
+
+}
+
+
+/* ==========================================================
+   SUCCESS MESSAGE
+========================================================== */
+
+.form-success-text{
+
+    font-size:.875rem;
+
+    color:var(--color-success);
+
+}
+
+
+/* ==========================================================
+   CHECKBOX
+========================================================== */
+
+.form-check{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:.75rem;
+
+}
+
+.form-check input{
+
+    width:20px;
+
+    height:20px;
+
+    accent-color:var(--color-primary);
+
+    margin-top:2px;
+
+}
+
+.form-check label{
+
+    font-size:.95rem;
+
+    line-height:1.6;
+
+    color:var(--color-text-secondary);
+
+}
+
+
+/* ==========================================================
+   RADIO
+========================================================== */
+
+.form-radio{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.75rem;
+
+}
+
+.form-radio input{
+
+    accent-color:var(--color-primary);
+
+}
+
+
+/* ==========================================================
+   SELECT
+========================================================== */
+
+.form-select{
+
+    cursor:pointer;
+
+}
+
+
+/* ==========================================================
+   FIELDSET
+========================================================== */
+
+fieldset{
+
+    border:none;
+
+}
+
+legend{
+
+    font-weight:var(--fw-bold);
+
+    margin-bottom:var(--space-md);
+
+}
+
+
+/* ==========================================================
+   INPUT ICON
+========================================================== */
+
+.input-wrapper{
+
+    position:relative;
+
+}
+
+.input-wrapper i,
+.input-wrapper svg{
+
+    position:absolute;
+
+    top:50%;
+
+    right:1rem;
+
+    transform:translateY(-50%);
+
+    color:var(--color-text-muted);
+
+    pointer-events:none;
+
+}
+
+.input-wrapper .form-input{
+
+    padding-right:3rem;
+
+}
+
+
+/* ==========================================================
+   TWO COLUMNS
+========================================================== */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:var(--space-lg);
+
+}
+
+
+/* ==========================================================
+   THREE COLUMNS
+========================================================== */
+
+.form-row-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:var(--space-lg);
+
+}
+
+
+/* ==========================================================
+   SEARCH INPUT
+========================================================== */
+
+.form-search{
+
+    position:relative;
+
+}
+
+.form-search input{
+
+    padding-left:3rem;
+
+}
+
+.form-search i,
+.form-search svg{
+
+    position:absolute;
+
+    top:50%;
+
+    left:1rem;
+
+    transform:translateY(-50%);
+
+    color:var(--color-text-muted);
+
+}
+
+
+/* ==========================================================
+   FILE INPUT
+========================================================== */
+
+.form-file{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:160px;
+
+    padding:var(--space-xl);
+
+    border:2px dashed var(--color-border);
+
+    border-radius:var(--radius-lg);
+
+    background:var(--color-surface);
+
+    cursor:pointer;
+
+    transition:all var(--transition-normal);
+
+}
+
+.form-file:hover{
+
+    border-color:var(--color-primary);
+
+    background:rgba(37,99,235,.03);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:768px){
+
+    .form-row,
+    .form-row-3{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

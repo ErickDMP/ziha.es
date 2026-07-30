@@ -1,0 +1,206 @@
+/* ==========================================================
+   Ziha Studio Design System
+   variables.css
+   Version: 1.0
+========================================================== */
+
+/* ==========================================================
+   GOOGLE FONTS
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* ==========================================================
+   ROOT VARIABLES
+========================================================== */
+
+:root {
+
+    /* =====================================
+       BRAND COLORS
+    ===================================== */
+
+    --color-primary: #2563EB;
+    --color-primary-light: #3B82F6;
+    --color-primary-dark: #1D4ED8;
+
+    --color-secondary: #7C3AED;
+    --color-secondary-light: #8B5CF6;
+    --color-secondary-dark: #6D28D9;
+
+    --color-accent: #06B6D4;
+
+    /* =====================================
+       SUCCESS / WARNING / ERROR
+    ===================================== */
+
+    --color-success: #16A34A;
+    --color-warning: #F59E0B;
+    --color-danger: #DC2626;
+    --color-info: #0EA5E9;
+
+    /* =====================================
+       LIGHT THEME
+    ===================================== */
+
+    --color-background: #F8FAFC;
+    --color-surface: #FFFFFF;
+    --color-surface-secondary: #F1F5F9;
+
+    --color-text: #0F172A;
+    --color-text-secondary: #475569;
+    --color-text-muted: #64748B;
+
+    --color-border: #E2E8F0;
+
+    /* =====================================
+       DARK THEME
+    ===================================== */
+
+    --color-background-dark: #0F172A;
+    --color-surface-dark: #1E293B;
+    --color-surface-dark-secondary: #334155;
+
+    --color-text-dark: #F8FAFC;
+    --color-text-dark-secondary: #CBD5E1;
+
+    --color-border-dark: #334155;
+
+    /* =====================================
+       TYPOGRAPHY
+    ===================================== */
+
+    --font-primary: "Inter", sans-serif;
+    --font-heading: "Space Grotesk", sans-serif;
+
+    /* =====================================
+       FONT SIZES
+    ===================================== */
+
+    --fs-display: 4.5rem;      /* 72px */
+    --fs-h1: 4rem;             /* 64px */
+    --fs-h2: 3rem;             /* 48px */
+    --fs-h3: 2.25rem;          /* 36px */
+    --fs-h4: 1.75rem;          /* 28px */
+    --fs-h5: 1.5rem;           /* 24px */
+
+    --fs-body-large: 1.25rem;  /* 20px */
+    --fs-body: 1.125rem;       /* 18px */
+    --fs-small: 1rem;          /* 16px */
+    --fs-caption: .875rem;     /* 14px */
+
+    /* =====================================
+       FONT WEIGHTS
+    ===================================== */
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    /* =====================================
+       LINE HEIGHT
+    ===================================== */
+
+    --lh-tight: 1.1;
+    --lh-heading: 1.2;
+    --lh-body: 1.7;
+
+    /* =====================================
+       SPACING SYSTEM (8px)
+    ===================================== */
+
+    --space-xxs: .25rem;      /* 4px */
+    --space-xs: .5rem;        /* 8px */
+    --space-sm: 1rem;         /* 16px */
+    --space-md: 1.5rem;       /* 24px */
+    --space-lg: 2rem;         /* 32px */
+    --space-xl: 2.5rem;       /* 40px */
+    --space-2xl: 3rem;        /* 48px */
+    --space-3xl: 4rem;        /* 64px */
+    --space-4xl: 5rem;        /* 80px */
+    --space-5xl: 6rem;        /* 96px */
+    --space-6xl: 8rem;        /* 128px */
+
+    /* =====================================
+       BORDER RADIUS
+    ===================================== */
+
+    --radius-sm: .5rem;
+    --radius-md: .75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-pill: 999px;
+
+    /* =====================================
+       SHADOWS
+    ===================================== */
+
+    --shadow-sm: 0 4px 12px rgba(15, 23, 42, .08);
+
+    --shadow-md: 0 10px 30px rgba(15, 23, 42, .12);
+
+    --shadow-lg: 0 20px 60px rgba(15, 23, 42, .18);
+
+    /* =====================================
+       TRANSITIONS
+    ===================================== */
+
+    --transition-fast: .2s ease-in-out;
+    --transition-normal: .3s ease-in-out;
+    --transition-slow: .5s ease;
+
+    /* =====================================
+       LAYOUT
+    ===================================== */
+
+    --container-width: 1280px;
+    --content-width: 1140px;
+
+    --container-padding: 24px;
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    --header-height: 80px;
+
+    /* =====================================
+       BUTTONS
+    ===================================== */
+
+    --button-height: 52px;
+
+    /* =====================================
+       Z-INDEX
+    ===================================== */
+
+    --z-dropdown: 1000;
+    --z-sticky: 1010;
+    --z-fixed: 1020;
+    --z-modal: 1030;
+    --z-tooltip: 1040;
+}
+
+/* ==========================================================
+   DARK MODE
+========================================================== */
+
+[data-theme="dark"] {
+
+    --color-background: var(--color-background-dark);
+
+    --color-surface: var(--color-surface-dark);
+
+    --color-surface-secondary: var(--color-surface-dark-secondary);
+
+    --color-text: var(--color-text-dark);
+
+    --color-text-secondary: var(--color-text-dark-secondary);
+
+    --color-border: var(--color-border-dark);
+
+}
