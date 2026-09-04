@@ -326,7 +326,7 @@ window.addEventListener("scroll",()=>{
 ======================================================*/
 
 emailjs.init({
-    publicKey: "TU_PUBLIC_KEY"
+    publicKey: "ehzp2IPeHCLHGcmDk"
 });
 
 const contactForm = document.getElementById("contact-form");
@@ -355,8 +355,8 @@ if(contactForm){
         }
 
         emailjs.sendForm(
-            "TU_SERVICE_ID",
-            "TU_TEMPLATE_ID",
+            "service_3bh1rm5",
+            "template_8sjmdme",
             contactForm
         )
         .then(() => {
