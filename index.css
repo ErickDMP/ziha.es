@@ -3192,3 +3192,353 @@ nav a.active::after{
     left:-110px;
 
 }
+/*======================================================
+                    CERTIFICACIONES
+======================================================*/
+
+#certificaciones{
+
+    background:#111827;
+
+    position:relative;
+
+    overflow:hidden;
+
+    scroll-margin-top:90px;
+
+}
+
+
+/*======================================================
+FONDO DECORATIVO
+======================================================*/
+
+#certificaciones::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,.06);
+
+    filter:blur(160px);
+
+    right:-200px;
+
+    top:-180px;
+
+}
+
+
+/*======================================================
+GRID
+======================================================*/
+
+.certifications-grid{
+
+    width:min(900px,90%);
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*======================================================
+TARJETA
+======================================================*/
+
+.certification-card{
+
+    display:grid;
+
+    grid-template-columns:360px 1fr;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:30px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    backdrop-filter:blur(16px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.30);
+
+    transition:.45s;
+
+}
+
+
+.certification-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(37,99,235,.45);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.40);
+
+}
+
+
+/*======================================================
+CERTIFICADO
+======================================================*/
+
+.certification-badge{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.certification-badge img{
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:contain;
+
+    border-radius:10px;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.30);
+
+    transition:.45s;
+
+}
+
+
+.certification-card:hover
+.certification-badge img{
+
+    transform:scale(1.025);
+
+}
+
+
+/*======================================================
+EMPRESA
+======================================================*/
+
+.certification-company{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#7AB2FF;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+
+.certification-company i{
+
+    color:var(--primary);
+
+}
+
+
+/*======================================================
+TÍTULO
+======================================================*/
+
+.certification-content h3{
+
+    font-size:1.55rem;
+
+    margin-bottom:12px;
+
+}
+
+
+/*======================================================
+DESCRIPCIÓN
+======================================================*/
+
+.certification-content p{
+
+    color:var(--text-secondary);
+
+    line-height:1.7;
+
+    margin-bottom:20px;
+
+    font-size:.95rem;
+
+}
+
+
+/*======================================================
+ETIQUETAS
+======================================================*/
+
+.certification-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:22px;
+
+}
+
+
+.certification-tech span{
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    background:rgba(37,99,235,.12);
+
+    border:1px solid rgba(37,99,235,.25);
+
+    color:#7AB2FF;
+
+    font-size:.78rem;
+
+}
+
+
+/*======================================================
+BOTÓN
+======================================================*/
+
+.certification-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    padding:11px 22px;
+
+    border-radius:40px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+.certification-btn:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-3px);
+
+}
+
+
+/*======================================================
+RESPONSIVE
+======================================================*/
+
+@media(max-width:768px){
+
+    .certification-card{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+        gap:28px;
+
+        padding:25px;
+
+    }
+
+
+    .certification-company{
+
+        justify-content:center;
+
+    }
+
+
+    .certification-tech{
+
+        justify-content:center;
+
+    }
+
+
+    .certification-badge{
+
+        max-width:420px;
+
+        margin:auto;
+
+    }
+
+}
+#proyectos,
+#sobre-mi,
+#certificaciones,
+#contacto,
+#redes{
+    scroll-margin-top:90px;
+}
+.form-status{
+    margin-top:18px;
+    text-align:center;
+    font-size:.95rem;
+    font-weight:500;
+    min-height:24px;
+}
+
+.form-status.success{
+    color:#22c55e;
+}
+
+.form-status.error{
+    color:#ef4444;
+}
+
+.contact-form button:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+    transform:none;
+}

@@ -321,3 +321,81 @@ window.addEventListener("scroll",()=>{
     progressBar.style.width = progress + "%";
 
 });
+/*======================================================
+                FORMULARIO - EMAILJS
+======================================================*/
+
+emailjs.init({
+    publicKey: "TU_PUBLIC_KEY"
+});
+
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.querySelector(".form-status");
+
+if(contactForm){
+
+    contactForm.addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        const submitButton =
+            contactForm.querySelector('button[type="submit"]');
+
+        submitButton.disabled = true;
+
+        submitButton.innerHTML =
+            '<i class="fa-solid fa-spinner fa-spin"></i> Enviando...';
+
+        if(formStatus){
+
+            formStatus.textContent = "";
+
+            formStatus.classList.remove("success","error");
+
+        }
+
+        emailjs.sendForm(
+            "TU_SERVICE_ID",
+            "TU_TEMPLATE_ID",
+            contactForm
+        )
+        .then(() => {
+
+            if(formStatus){
+
+                formStatus.textContent =
+                    "✓ Mensaje enviado correctamente.";
+
+                formStatus.classList.add("success");
+
+            }
+
+            contactForm.reset();
+
+        })
+        .catch((error) => {
+
+            console.error("Error EmailJS:", error);
+
+            if(formStatus){
+
+                formStatus.textContent =
+                    "No se pudo enviar el mensaje. Inténtalo de nuevo.";
+
+                formStatus.classList.add("error");
+
+            }
+
+        })
+        .finally(() => {
+
+            submitButton.disabled = false;
+
+            submitButton.innerHTML =
+                '<i class="fa-solid fa-paper-plane"></i> Enviar mensaje';
+
+        });
+
+    });
+
+}
