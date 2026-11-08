@@ -1,0 +1,3 @@
+/* The centre map is a dashboard grid item. Prevent stretching to the height
+   of the separate SDR instrument stack, which caused an empty panel tail. */
+.dashboard > .radar{align-self:start;min-height:0;height:auto}
