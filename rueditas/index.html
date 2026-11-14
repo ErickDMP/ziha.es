@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziha Rueditas | Ziha Studio</title>
+  <meta name="description" content="Ziha Rueditas es un configurador para Debian y Ubuntu con fondos de pantalla, idioma español, teclado español e instalador automático.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Ziha Rueditas</div>
+      <div class="nav-links">
+        <a href="#instalacion">Instalación</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#seguridad">Seguridad</a>
+        <a href="#versiones">Versiones</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="badge">Ziha Studio &lt;3</p>
+        <h1>Ziha Rueditas</h1>
+        <p class="subtitle">
+          Configurador para Debian y Ubuntu con instalación sencilla, fondos personalizados de Ziha
+          y herramientas para preparar máquinas virtuales de estudio.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn primary" href="#instalacion">Instalar ahora</a>
+          <a class="btn secondary" href="https://github.com/ErickDMP/ziha_rueditas" target="_blank">Ver en GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/img/ziha_01_retrato.png" alt="Ziha retrato">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="instalacion" class="section">
+      <h2>Instalación rápida</h2>
+      <p>La forma más sencilla de instalar Ziha Rueditas en una máquina Debian o Ubuntu es usar el instalador automático.</p>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>Instalación automática</span>
+          <button class="copy-btn" data-copy="curl -fsSLO https://erickdmp.github.io/ziha_rueditas/install.sh && sudo bash install.sh">Copiar</button>
+        </div>
+        <pre><code>curl -fsSLO https://erickdmp.github.io/ziha_rueditas/install.sh && sudo bash install.sh</code></pre>
+      </div>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>Ejecutar Ziha Rueditas</span>
+          <button class="copy-btn" data-copy="ziha_rueditas">Copiar</button>
+        </div>
+        <pre><code>ziha_rueditas</code></pre>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2>Instalación manual</h2>
+      <p>Si prefieres configurar el repositorio APT manualmente, puedes seguir estos pasos:</p>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>Descargar clave</span>
+          <button class="copy-btn" data-copy="curl -fL https://erickdmp.github.io/ziha_rueditas/ziha-archive-key.asc -o /tmp/ziha-archive-key.asc">Copiar</button>
+        </div>
+        <pre><code>curl -fL https://erickdmp.github.io/ziha_rueditas/ziha-archive-key.asc -o /tmp/ziha-archive-key.asc</code></pre>
+      </div>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>Configurar repositorio</span>
+          <button class="copy-btn" data-copy="sudo install -d -m 755 /etc/apt/keyrings && sudo install -m 644 /tmp/ziha-archive-key.asc /etc/apt/keyrings/ziha-archive-key.asc">Copiar</button>
+        </div>
+        <pre><code>sudo install -d -m 755 /etc/apt/keyrings
+sudo install -m 644 /tmp/ziha-archive-key.asc /etc/apt/keyrings/ziha-archive-key.asc</code></pre>
+      </div>
+
+      <div class="code-box">
+        <div class="code-header">
+          <span>Contenido de ziha.sources</span>
+          <button class="copy-btn" data-copy="Types: deb
+URIs: https://erickdmp.github.io/ziha_rueditas/
+Suites: ./
+Signed-By: /etc/apt/keyrings/ziha-archive-key.asc">Copiar</button>
+        </div>
+        <pre><code>Types: deb
+URIs: https://erickdmp.github.io/ziha_rueditas/
+Suites: ./
+Signed-By: /etc/apt/keyrings/ziha-archive-key.asc</code></pre>
+      </div>
+    </section>
+
+    <section id="caracteristicas" class="section">
+      <h2>Características</h2>
+      <div class="features-grid">
+        <article class="card">
+          <h3>Fondos de Ziha</h3>
+          <p>Incluye tres fondos personalizados: retrato, lluvia y azotea.</p>
+        </article>
+        <article class="card">
+          <h3>Idioma español</h3>
+          <p>Configura el sistema en español de España.</p>
+        </article>
+        <article class="card">
+          <h3>Teclado español</h3>
+          <p>Permite establecer el teclado en distribución española.</p>
+        </article>
+        <article class="card">
+          <h3>Repositorio APT</h3>
+          <p>Distribución del paquete mediante GitHub Pages y repositorio firmado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="assets/img/ziha_01_retrato.png" alt="Ziha retrato">
+        <img src="assets/img/ziha_02_lluvia.png" alt="Ziha lluvia">
+        <img src="assets/img/ziha_03_azotea.png" alt="Ziha azotea">
+      </div>
+    </section>
+
+    <section id="seguridad" class="section">
+      <h2>Seguridad y firma GPG</h2>
+      <p>El repositorio APT de Ziha Studio está firmado digitalmente para que el sistema pueda verificar la autenticidad de las publicaciones.</p>
+
+      <div class="info-box">
+        <p><strong>Huella de la clave pública:</strong></p>
+        <p class="fingerprint">40F1 9713 45C3 C92A CAEF 9AE6 ACE2 D0DE 66CD CEAD</p>
+      </div>
+
+      <p>La clave pública del repositorio puede descargarse directamente desde esta misma web.</p>
+    </section>
+
+    <section id="versiones" class="section alt">
+      <h2>Versiones</h2>
+      <div class="versions">
+        <article class="card">
+          <h3>v0.2.0</h3>
+          <p>Fondos de Ziha, idioma español, teclado español, repositorio APT e instalador automático.</p>
+        </article>
+        <article class="card">
+          <h3>Próximo objetivo: v0.3.0</h3>
+          <p>Mejoras para VirtualBox, pantalla, carpetas compartidas y más automatización.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Desarrollado por <strong>Ziha Studio</strong> · Proyecto de aprendizaje y automatización para Debian y Ubuntu.</p>
+    <p>
+      <a href="https://github.com/ErickDMP/ziha_rueditas" target="_blank">GitHub</a> ·
+      <a href="https://ziha.es" target="_blank">Ziha.es</a>
+    </p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html><h1>Ziha Studio - Repositorio APT</h1> <p>Ziha Rueditas version 0.2</p>
