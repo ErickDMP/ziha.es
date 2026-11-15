@@ -1,0 +1,9 @@
+ZIHA.ES — Actualización del portfolio
+
+Extrae el contenido de este ZIP dentro de la carpeta raíz de ziha.es, aceptando reemplazar index.html, index.css y assets/js/script.js. No borres otras carpetas ni archivos.
+
+Incluye dos nuevas portadas en assets/imagenes. La de Rueditas contiene una captura de tu terminal; la de Orbital es una ilustración de demostración. Conserva las carpetas orbital/ y rueditas/ ya existentes, además de las imágenes originales del portfolio, CV y CNAME.
+
+No se modifican los CSS del Design System: el index.html actual solo carga index.css. Las páginas independientes tampoco se modifican.
+
+Para probar: abre la carpeta en VS Code, ejecuta Live Server desde el index.html y revisa las secciones, enlaces, menú móvil y formulario. El envío del formulario requiere EmailJS y no se ha enviado ningún mensaje de prueba. Verifica los enlaces de credencial y redes pendientes con tus URLs reales.

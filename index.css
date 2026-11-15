@@ -3542,3 +3542,105 @@ RESPONSIVE
     cursor:not-allowed;
     transform:none;
 }
+
+/* =====================================================
+   ZIHA PORTFOLIO — PROYECTOS Y ACCESIBILIDAD
+===================================================== */
+#proyectos .projects-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(20px, 3vw, 36px);
+    align-items: stretch;
+}
+#proyectos .project-card {display: flex; flex-direction: column; min-width: 0;}
+#proyectos .project-card::before {pointer-events: none;}
+#proyectos .browser {gap: 12px; flex-shrink: 0;}
+#proyectos .browser-left {flex-shrink: 0;}
+#proyectos .browser-url {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+#proyectos .project-image {aspect-ratio: 1000 / 520; background: #111827; flex-shrink: 0;}
+#proyectos .project-image img {height: 100%; width: 100%; object-fit: cover;}
+#proyectos .project-content {display: flex; flex-direction: column; flex: 1; padding: clamp(20px, 3vw, 30px);}
+#proyectos .project-content p {margin-bottom: 22px;}
+#proyectos .project-tech {gap: 8px; margin-top: auto; margin-bottom: 20px;}
+#proyectos .project-tech span {padding: 6px 12px;}
+.project-status {display: inline-flex; align-self: flex-start; font-size: .75rem; font-weight: 600; letter-spacing: .03em; color: #a5b4fc; margin-bottom: 12px;}
+.project-status-rueditas {color: #c4b5fd;}
+.project-status-orbital {color: #fcd49a;}
+.project-rueditas {border-color: rgba(139,92,246,.30);}
+.project-orbital {border-color: rgba(231,126,49,.24);}
+#proyectos .project-btn {min-height: 48px; height: auto; text-align: center; padding: 10px 14px; flex-shrink: 0;}
+.project-source {display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 12px; min-height: 42px; border: 1px solid rgba(255,255,255,.14); border-radius: 40px; font-size: .88rem; font-weight: 500; color: var(--text-secondary);}
+.project-source:hover {border-color: #7ab2ff; color: white;}
+.project-lab {position: relative; margin: 40px auto 0; padding: clamp(20px, 3vw, 32px); background: rgba(255,255,255,.035); border: 1px solid var(--border); border-radius: 22px;}
+.lab-heading {display: flex; gap: 18px; align-items: flex-start; margin-bottom: 22px;}
+.lab-heading h3 {font-size: clamp(1.2rem, 3vw, 1.55rem);}
+.lab-heading p {color: var(--text-secondary); font-size: .92rem; margin-top: 6px;}
+.lab-icon {display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; color: #93c5fd; background: rgba(37,99,235,.15); flex-shrink: 0; font-size: 1.35rem;}
+.lab-grid {display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px;}
+.lab-grid > div {display: flex; flex-direction: column; gap: 7px; padding: 16px; border-radius: 12px; background: rgba(15,23,42,.65); border: 1px solid var(--border);}
+.lab-grid i {color: #93c5fd; font-size: 1.1rem;}
+.lab-grid strong {font-size: .9rem;}
+.lab-grid span {color: var(--text-secondary); font-size: .79rem;}
+.project-card a:focus-visible, .menu-toggle:focus-visible, nav a:focus-visible {outline: 2px solid #93c5fd; outline-offset: 4px;}
+.pending-link {color: var(--text-secondary); opacity: .8; font-size: .85rem;}
+.sr-only {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;}
+.typing {white-space: normal; overflow-wrap: anywhere;}
+.menu-toggle {display: none; border: 1px solid var(--border); background: var(--surface); border-radius: 10px; cursor: pointer; width: 45px; height: 44px; padding: 10px;}
+.menu-toggle span {display: block; height: 2px; background: white; margin: 4px 0; border-radius: 2px;}
+@media(max-width: 900px) {
+    .lab-grid {grid-template-columns: repeat(2,minmax(0,1fr));}
+    header .container {height: 76px;}
+    header {padding: 0;}
+    header nav ul {gap: 16px; flex-wrap: wrap;}
+    .js-nav .menu-toggle {display: block;}
+    .js-nav header nav {display: none; position: absolute; top: 100%; left: 5%; right: 5%; background: #111827; border: 1px solid var(--border); border-radius: 15px; padding: 18px; box-shadow: var(--shadow);}
+    .js-nav header nav.is-open {display: block;}
+    .js-nav header nav ul {display: flex; flex-direction: column; align-items: stretch; gap: 0;}
+    .js-nav header nav a {display: block; padding: 10px;}
+    .js-nav header nav a::after {display: none;}
+}
+@media(max-width: 700px) {
+    #proyectos .projects-grid {grid-template-columns: minmax(0,1fr);}
+}
+@media(max-width: 420px) {
+    .lab-grid {grid-template-columns: minmax(0,1fr);}
+    .lab-heading {gap: 12px;}
+}
+@media(prefers-reduced-motion: reduce) {
+    html {scroll-behavior: auto;}
+    *, *::before, *::after {animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important;}
+    .hidden, .show {opacity: 1 !important; transform: none !important;}
+    .typing {border: 0;}
+}
+/*======================================================
+                 BOTONES DEL CURRÍCULUM
+======================================================*/
+
+.cv-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.cv-buttons .social-btn {
+    gap: 10px;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.cv-buttons .social-btn i {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cv-buttons .cv-download {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: #93b4ff;
+}
+
+.cv-buttons .cv-download:hover {
+    background: var(--primary);
+    color: white;
+}

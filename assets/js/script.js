@@ -8,10 +8,31 @@ HEADER AL HACER SCROLL
 ======================================================*/
 
 const header = document.querySelector("header");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.getElementById("main-nav");
+
+if (menuToggle && mainNav) {
+    document.documentElement.classList.add("js-nav");
+    const setMenu = (open) => {
+        mainNav.classList.toggle("is-open", open);
+        menuToggle.setAttribute("aria-expanded", String(open));
+        menuToggle.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+    };
+    menuToggle.addEventListener("click", () => setMenu(!mainNav.classList.contains("is-open")));
+    mainNav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => setMenu(false)));
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && mainNav.classList.contains("is-open")) { setMenu(false); menuToggle.focus(); }
+    });
+    document.addEventListener("click", event => {
+        if (!mainNav.contains(event.target) && !menuToggle.contains(event.target)) setMenu(false);
+    });
+    window.matchMedia("(max-width: 900px)").addEventListener("change", () => setMenu(false));
+}
 
 window.addEventListener("scroll", () => {
 
-    header.classList.toggle("scrolled", window.scrollY > 50);
+    header?.classList.toggle("scrolled", window.scrollY > 50);
 
 });
 
@@ -41,30 +62,16 @@ window.addEventListener("scroll", () => {
 SCROLL SUAVE
 ======================================================*/
 
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-
-    link.addEventListener("click",(e)=>{
-
-        e.preventDefault();
-
-        const target=document.querySelector(
-
-            link.getAttribute("href")
-
-        );
-
-        if(target){
-
-            target.scrollIntoView({
-
-                behavior:"smooth"
-
-            });
-
-        }
-
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", event => {
+        const href = link.getAttribute("href");
+        if (!href || href.length < 2) { event.preventDefault(); return; }
+        const target = document.getElementById(href.slice(1));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth" });
+        history.replaceState(null, "", href);
     });
-
 });
 
 /*======================================================
@@ -82,39 +89,23 @@ if(year){
             INTERSECTION OBSERVER
 ======================================================*/
 
-const observer = new IntersectionObserver(
-
-(entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show");
-
-        }
-
+if ("IntersectionObserver" in window && !reducedMotion) {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("hidden");
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.05 });
+    document.querySelectorAll(".hero-left, .hero-right, .project-card, .about-image, .about-content, .contact-info, .contact-form, .social-card, .footer-container").forEach(element => {
+        // Keep keyboard navigation and tall project cards usable.
+        element.classList.add("hidden");
+        element.addEventListener("focusin", () => { element.classList.remove("hidden"); element.classList.add("show"); });
+        observer.observe(element);
     });
-
-},
-
-{
-
-    threshold:0.15
-
-});
-
-document.querySelectorAll(
-
-".hero-left, .hero-right, .project-card, .about-image, .about-content, .contact-info, .contact-form, .social-card, .footer-container"
-
-).forEach(element=>{
-
-    element.classList.add("hidden");
-
-    observer.observe(element);
-
-});
+}
 
 /*======================================================
             MENÚ ACTIVO
@@ -162,17 +153,11 @@ window.addEventListener("scroll",()=>{
 ======================================================*/
 
 const words = [
-
-    "Full Stack Developer",
-
-    "Frontend Developer",
-
-    "Backend Developer",
-
-    "UI / UX Enthusiast",
-
-    "Problem Solver"
-
+    "Estudiante de ASIR",
+    "Sistemas Linux",
+    "Automatización Bash",
+    "Redes y servidores",
+    "Desarrollo Web"
 ];
 
 let wordIndex = 0;
@@ -233,7 +218,7 @@ function typeWriter(){
 
 }
 
-typeWriter();
+if (!reducedMotion) typeWriter();
 
 /*======================================================
                 COUNTERS
@@ -241,62 +226,25 @@ typeWriter();
 
 const counters = document.querySelectorAll(".counter");
 
-const counterObserver = new IntersectionObserver(
-
-(entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(!entry.isIntersecting) return;
-
-        const counter = entry.target;
-
-        const target = Number(counter.dataset.target);
-
-        let value = 0;
-
-        const speed = target / 120;
-
-        const update = ()=>{
-
-            value += speed;
-
-            if(value < target){
-
-                counter.textContent =
-                    Math.floor(value);
-
-                requestAnimationFrame(update);
-
-            }else{
-
-                counter.textContent = target;
-
-            }
-
-        };
-
-        update();
-
-        counterObserver.unobserve(counter);
-
-    });
-
-},
-
-{
-
-    threshold:.5
-
+if ("IntersectionObserver" in window && !reducedMotion) {
+    const counterObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const counter = entry.target;
+            const target = Number(counter.dataset.target);
+            let start;
+            const animate = time => {
+                if (start === undefined) start = time;
+                const progress = Math.min((time - start) / 900, 1);
+                counter.textContent = Math.floor(target * progress);
+                if (progress < 1) requestAnimationFrame(animate);
+            };
+            requestAnimationFrame(animate);
+            counterObserver.unobserve(counter);
+        });
+    }, {threshold: 0.5});
+    counters.forEach(counter => counterObserver.observe(counter));
 }
-
-);
-
-counters.forEach(counter=>{
-
-    counterObserver.observe(counter);
-
-});
 
 /*======================================================
             SCROLL PROGRESS BAR
@@ -316,7 +264,7 @@ window.addEventListener("scroll",()=>{
 
     const progress =
 
-        (window.scrollY / totalHeight) * 100;
+        totalHeight > 0 ? Math.max(0, Math.min(100, (window.scrollY / totalHeight) * 100)) : 0;
 
     progressBar.style.width = progress + "%";
 
@@ -325,7 +273,7 @@ window.addEventListener("scroll",()=>{
                 FORMULARIO - EMAILJS
 ======================================================*/
 
-emailjs.init({
+if (typeof emailjs !== "undefined") emailjs.init({
     publicKey: "ehzp2IPeHCLHGcmDk"
 });
 
@@ -337,6 +285,11 @@ if(contactForm){
     contactForm.addEventListener("submit", function(event){
 
         event.preventDefault();
+
+        if (typeof emailjs === "undefined") {
+            if (formStatus) { formStatus.textContent = "El formulario no está disponible. Escribe a contacto@ziha.es."; formStatus.classList.add("error"); }
+            return;
+        }
 
         const submitButton =
             contactForm.querySelector('button[type="submit"]');

@@ -5,742 +5,703 @@
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Portfolio profesional de Erick Morales. Desarrollo Web, Frontend, Backend y proyectos realizados.">
+    <meta name="description"
+        content="Portfolio de Erick Morales, estudiante de ASIR: administración de sistemas Linux, automatización, redes y desarrollo web.">
 
-    <meta
-        name="keywords"
-        content="Portfolio, HTML, CSS, JavaScript, Web Developer, Erick Morales">
+    <meta name="keywords" content="Portfolio, ASIR, Linux, Bash, APT, redes, SDR, desarrollo web, Erick Morales">
 
-    <meta
-        name="author"
-        content="Erick Morales">
+    <meta name="author" content="Erick Morales">
 
-    <meta
-        name="theme-color"
-        content="#0B1120">
+    <meta name="theme-color" content="#0B1120">
 
-    <title>Erick Morales | Web Developer</title>
+    <title>Erick Morales | ASIR · Sistemas y desarrollo web</title>
 
     <!-- Google Fonts -->
 
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-  <!-- Font Awesome -->
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
 
-<!-- CSS -->
-<link
-    rel="stylesheet"
-    href="index.css">
-
-<!-- Favicon -->
-<link
-    rel="icon"
-    type="image/png"
-    href="assets/img/favicon.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 
 <body>
 
-<!--=====================================
+    <!--=====================================
 PROGRESS BAR
 ======================================-->
 
-<div class="progress-container">
+    <div class="progress-container">
 
-    <div class="progress-bar"></div>
+        <div class="progress-bar"></div>
 
-</div>
+    </div>
 
-<!--=====================================
+    <!--=====================================
 HEADER
 ======================================-->
 
-<header>
+    <header>
 
-    <div class="container">
+        <div class="container">
 
-        <a href="#inicio" class="logo">
+            <a href="#inicio" class="logo">
 
-            <img
-                src="assets/imagenes/perfil.png"
-                alt="Erick Morales"
-                loading="eager">
+                <img src="assets/imagenes/perfil.png" alt="Erick Morales" loading="eager">
 
-        </a>
+            </a>
 
-        <nav>
+            <nav id="main-nav" aria-label="Navegación principal">
 
-            <ul>
+                <ul>
 
-                <li>
-                    <a href="#inicio">
-                        Inicio
-                    </a>
-                </li>
+                    <li>
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#proyectos">
-                        Proyectos
-                    </a>
-                </li>
+                    <li>
+                        <a href="#proyectos">
+                            Proyectos
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#sobre-mi">
-                        Sobre mí
-                    </a>
-                </li>
+                    <li>
+                        <a href="#sobre-mi">
+                            Sobre mí
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#contacto">
-                        Contacto
-                    </a>
-                </li>
+                    <li><a href="#certificaciones">Certificaciones</a></li>
 
-                <li>
-                    <a href="#redes">
-                        Redes
-                    </a>
-                </li>
+                    <li>
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
 
-            </ul>
+                    <li>
+                        <a href="#redes">
+                            Redes
+                        </a>
+                    </li>
 
-        </nav>
+                </ul>
 
-        <!-- Menú móvil -->
+            </nav>
 
-        <div class="menu-toggle">
+            <!-- Menú móvil -->
 
-            <span></span>
-            <span></span>
-            <span></span>
+            <button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="main-nav">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
 
         </div>
 
-    </div>
-
-</header>
-<!--======================================================
+    </header>
+    <!--======================================================
                         HERO
 =======================================================-->
 
-<section id="inicio" class="hero">
+    <section id="inicio" class="hero">
 
-    <div class="hero-container">
+        <div class="hero-container">
 
-        <!--=====================================
+            <!--=====================================
         COLUMNA IZQUIERDA
         ======================================-->
 
-        <div class="hero-left">
+            <div class="hero-left">
 
-            <span class="small-title">
-                Bienvenido a mi portfolio
-            </span>
+                <span class="small-title">
+                    Bienvenido a mi portfolio
+                </span>
 
-            <h1>
-                Erick
-                <br>
-                Morales
-            </h1>
+                <h1>
+                    Erick
+                    <br>
+                    Morales
+                </h1>
 
-            <h2>
-                <span class="typing"></span>
-            </h2>
+                <h2>
+                    <span class="typing" aria-hidden="true">Estudiante de ASIR</span><span class="sr-only">Estudiante de
+                        ASIR, sistemas y desarrollo web</span>
+                </h2>
 
-            <p>
-                Desarrollo sitios web modernos,
-                rápidos y optimizados utilizando
-                HTML, CSS y JavaScript.
-                Mi objetivo es crear experiencias
-                visuales atractivas, accesibles
-                y con un excelente rendimiento.
-            </p>
+                <p>
+                    Soy estudiante de segundo curso de ASIR. Desarrollo proyectos de administración de sistemas Linux,
+                    automatización, redes y desarrollo web. Me interesa crear soluciones que resuelvan problemas reales,
+                    desde preparar máquinas virtuales hasta distribuir software mediante APT.
+                </p>
 
-            <div class="hero-buttons">
+                <div class="hero-buttons">
 
-                <a
-                    href="#proyectos"
-                    class="btn">
-                    Ver proyectos
-                </a>
+                    <a href="#proyectos" class="btn">
+                        Ver proyectos
+                    </a>
 
-                <a
-                    href="assets/cv/Erick_Morales_CV.pdf"
-                    class="btn-outline"
-                    download>
-                    Descargar CV
-                </a>
+                    <a href="assets/cv/Erick_Morales_CV.pdf" class="btn-outline" download>
+                        Descargar CV
+                    </a>
+
+                </div>
 
             </div>
 
-        </div>
-
-        <!--=====================================
+            <!--=====================================
         COLUMNA DERECHA
         ======================================-->
 
-        <div class="hero-right">
+            <div class="hero-right">
 
-            <img
-                src="assets/imagenes/perfil.png"
-                alt="Erick Morales"
-                loading="eager"
-            >
+                <img src="assets/imagenes/perfil.png" alt="Erick Morales" loading="eager">
 
-            <!--==============================
+                <!--==============================
             TECNOLOGÍAS FLOTANTES
             ==============================-->
 
-            <div class="floating-card html">
-                <i class="fa-brands fa-html5"></i>
-                <span>HTML5</span>
-            </div>
+                <div class="floating-card html">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
 
-            <div class="floating-card css">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span>CSS3</span>
-            </div>
+                <div class="floating-card css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
 
-            <div class="floating-card js">
-                <i class="fa-brands fa-js"></i>
-                <span>JavaScript</span>
-            </div>
+                <div class="floating-card js">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
 
-            <div class="floating-card git">
-                <i class="fa-brands fa-git-alt"></i>
-                <span>Git</span>
-            </div>
+                <div class="floating-card git">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
 
-            <div class="floating-card github">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-            </div>
+                <div class="floating-card github">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </div>
 
-            <div class="floating-card linux">
-                <i class="fa-brands fa-linux"></i>
-                <span>Linux</span>
-            </div>
+                <div class="floating-card linux">
+                    <i class="fa-brands fa-linux"></i>
+                    <span>Linux</span>
+                </div>
 
-            <div class="floating-card mysql">
-                <i class="fa-solid fa-database"></i>
-                <span>MySQL</span>
-            </div>
+                <div class="floating-card mysql">
+                    <i class="fa-solid fa-database"></i>
+                    <span>MySQL</span>
+                </div>
 
-            <div class="floating-card responsive">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span>Responsive</span>
+                <div class="floating-card responsive">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <span>Responsive</span>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
-
-    <!--=====================================
+        <!--=====================================
     INDICADOR DE SCROLL
     ======================================-->
 
-    <div class="scroll-down">
+        <div class="scroll-down">
 
-        <span>
-            Desplázate
-        </span>
+            <span>
+                Desplázate
+            </span>
 
-        <div class="scroll-mouse"></div>
+            <div class="scroll-mouse"></div>
 
-    </div>
+        </div>
 
-</section>
-<!--======================================================
+    </section>
+    <!--======================================================
                     PROYECTOS
 =======================================================-->
 
-<section id="proyectos">
+    <section id="proyectos">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section-title">
+            <div class="section-title">
 
-            <h2>Mis Proyectos</h2>
+                <h2>Mis Proyectos</h2>
 
-            <p>
+                <p>
 
-                Algunos de los proyectos en los que he trabajado,
-                desarrollados con un enfoque en diseño, rendimiento,
-                accesibilidad y experiencia de usuario.
+                    Proyectos personales y académicos que reúnen administración de sistemas, automatización, redes y
+                    desarrollo web.
 
-            </p>
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card project-rueditas">
+                    <div class="browser">
+                        <div class="browser-left" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <div class="browser-url">ziha.es/rueditas/</div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/imagenes/rueditas-portfolio.webp"
+                            alt="Captura real del menú de Ziha Rueditas 0.3.0 en Debian" loading="lazy" width="1000"
+                            height="520">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status project-status-rueditas">Publicado · v0.3.0</span>
+                        <h3>Ziha Rueditas</h3>
+                        <p>Herramienta Bash para personalizar Linux y preparar máquinas virtuales. Incluye configuración
+                            de pantalla, idioma, teclado, herramientas y un asistente guiado. Distribución con
+                            repositorio APT propio, firmas GPG y actualizaciones verificadas en Debian 13 AMD64. Ubuntu
+                            y ARM64 pendientes de validación.</p>
+                        <div class="project-tech">
+                            <span>Bash</span>
+                            <span>Debian</span>
+                            <span>APT / dpkg</span>
+                            <span>GPG</span>
+                            <span>Git</span>
+                        </div>
+                        <a href="rueditas/" class="project-btn">Ver proyecto</a>
+                        <a href="https://github.com/ErickDMP/ziha_rueditas" target="_blank" rel="noopener noreferrer"
+                            class="project-source"><i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                            fuente</a>
+                    </div>
+                </article>
+
+                <article class="project-card project-orbital">
+                    <div class="browser">
+                        <div class="browser-left" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <div class="browser-url">ziha.es/orbital/</div>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/imagenes/orbital-portfolio.svg"
+                            alt="Ilustración conceptual del centro de control orbital con radar y telemetría"
+                            loading="lazy" width="1000" height="520">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status project-status-orbital">Proyecto final ASIR · En desarrollo</span>
+                        <h3>Ziha Orbital — Satellite Control</h3>
+                        <p>Proyecto de estación experimental para recepción y decodificación de señales satelitales
+                            mediante SDR. Panel web con mapa, seguimiento orbital y telemetría en modo demostración; la
+                            integración con hardware y la automatización de la recepción son objetivos del proyecto.</p>
+                        <div class="project-tech">
+                            <span>SDR</span>
+                            <span>Linux</span>
+                            <span>JavaScript</span>
+                            <span>HTML / CSS</span>
+                            <span>Bash (previsto)</span>
+                        </div>
+                        <a href="orbital/" class="project-btn">Abrir demostración</a>
+                        <a href="https://github.com/ErickDMP/Ziha-Satellite-Control" target="_blank"
+                            rel="noopener noreferrer" class="project-source"><i class="fa-brands fa-github"
+                                aria-hidden="true"></i> Código fuente</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+
+                    <div class="browser">
+
+                        <div class="browser-left">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                        <div class="browser-url">
+
+                            www.marinaroblespsicologia.es
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-image">
+
+                        <img src="assets/imagenes/marina.png" alt="Marina Robles Psicología" loading="lazy">
+
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-status">Desarrollo web · Publicado</span>
+
+                        <h3>
+
+                            Marina Robles Psicología
+
+                        </h3>
+
+                        <p>
+
+                            Sitio web corporativo para una clínica de
+                            psicología, desarrollado desde cero con un
+                            diseño moderno, responsive y optimizado
+                            para SEO.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a href="https://www.marinaroblespsicologia.es" target="_blank" rel="noopener noreferrer"
+                            class="project-btn">
+
+                            Ver proyecto
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="browser">
+
+                        <div class="browser-left">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                        <div class="browser-url">
+
+                            ziha.es
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-image">
+
+                        <img src="assets/imagenes/ziha.png" alt="Portfolio Ziha" loading="lazy">
+
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-status">Portfolio personal</span>
+
+                        <h3>
+
+                            Ziha Portfolio
+
+                        </h3>
+
+                        <p>
+
+                            Portfolio personal desarrollado para mostrar
+                            proyectos, tecnologías y experiencia con un
+                            enfoque visual moderno inspirado en Vercel
+                            y Linear.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a href="#inicio" class="project-btn">
+
+                            Ver portfolio
+
+                        </a>
+                        <a href="https://github.com/ErickDMP/ziha.es" target="_blank" rel="noopener noreferrer"
+                            class="project-source"><i class="fa-brands fa-github" aria-hidden="true"></i> Código
+                            fuente</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <aside class="project-lab" aria-labelledby="lab-title">
+                <div class="lab-heading">
+                    <div class="lab-icon"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></div>
+                    <div><span class="project-status">Formación práctica · ASIR</span>
+                        <h3 id="lab-title">Laboratorio de sistemas y redes</h3>
+                        <p>Prácticas académicas de configuración y diagnóstico en máquinas virtuales.</p>
+                    </div>
+                </div>
+                <div class="lab-grid">
+                    <div><i class="fa-solid fa-users" aria-hidden="true"></i><strong>OpenLDAP</strong><span>Directorios,
+                            usuarios y unidades organizativas.</span></div>
+                    <div><i class="fa-solid fa-globe" aria-hidden="true"></i><strong>DNS /
+                            BIND9</strong><span>Resolución de nombres y configuración de zonas.</span></div>
+                    <div><i class="fa-solid fa-network-wired" aria-hidden="true"></i><strong>DHCP / ISC
+                            Kea</strong><span>Asignación dinámica de direcciones IP.</span></div>
+                    <div><i class="fa-solid fa-terminal" aria-hidden="true"></i><strong>SSH y
+                            virtualización</strong><span>Administración remota, Debian y VirtualBox.</span></div>
+                </div>
+            </aside>
+
 
         </div>
 
-        <div class="projects-grid">
-
-            <!--==================================================
-            PROYECTO 1 Marina Robles
-            ===================================================-->
-
-            <article class="project-card">
-
-                <div class="browser">
-
-                    <div class="browser-left">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-                    <div class="browser-url">
-
-                        www.marinaroblespsicologia.es
-
-                    </div>
-
-                </div>
-
-                <div class="project-image">
-
-                    <img
-                        src="assets/imagenes/marina.png"
-                        alt="Marina Robles Psicología"
-                        loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-
-                        Marina Robles Psicología
-
-                    </h3>
-
-                    <p>
-
-                        Sitio web corporativo para una clínica de
-                        psicología, desarrollado desde cero con un
-                        diseño moderno, responsive y optimizado
-                        para SEO.
-
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <a
-                        href="https://www.marinaroblespsicologia.es"
-                        target="_blank"
-                        class="project-btn">
-
-                        Ver proyecto
-
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!--==================================================
-            PROYECTO 2
-            ===================================================-->
-
-            <article class="project-card">
-
-                <div class="browser">
-
-                    <div class="browser-left">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-                    <div class="browser-url">
-
-                        ziha.es
-
-                    </div>
-
-                </div>
-
-                <div class="project-image">
-
-                    <img
-                        src="assets/imagenes/ziha.png"
-                        alt="Portfolio Ziha"
-                        loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-
-                        Ziha Portfolio
-
-                    </h3>
-
-                    <p>
-
-                        Portfolio personal desarrollado para mostrar
-                        proyectos, tecnologías y experiencia con un
-                        enfoque visual moderno inspirado en Vercel
-                        y Linear.
-
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-
-                    </div>
-
-                    <a
-                        href="#inicio"
-                        class="project-btn">
-
-                        Proyecto actual
-
-                    </a>
-
-                </div>
-
-            </article>
-
-            <!--==================================================
-            PROYECTO 3
-            ===================================================-->
-
-            <article class="project-card">
-
-                <div class="browser">
-
-                    <div class="browser-left">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-                    <div class="browser-url">
-
-                        Supabase - Base de datos
-
-                    </div>
-
-                </div>
-
-                <div class="project-image">
-
-                    <img
-                        src="assets/imagenes/supabase.png"
-                        alt="Nuevo proyecto"
-                        loading="lazy">
-
-                </div>
-
-                <div class="project-content">
-
-                    <h3>
-
-                        Próximo Proyecto
-
-                    </h3>
-
-                    <p>
-
-                        Actualmente trabajando en un nuevo desarrollo.
-                        Muy pronto estará disponible para mostrar su
-                        diseño, funcionalidades y tecnologías.
-
-                    </p>
-
-                    <div class="project-tech">
-
-                        <span>En desarrollo</span>
-
-                    </div>
-
-                    <a
-                        href="#contacto"
-                        class="project-btn">
-
-                        Más información
-
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!--======================================================
+    </section>
+    <!--======================================================
                     SOBRE MÍ
 =======================================================-->
 
-<section id="sobre-mi">
+    <section id="sobre-mi">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="about-container">
+            <div class="about-container">
 
-            <!--=====================================
+                <!--=====================================
             FOTOGRAFÍA
             ======================================-->
 
-            <div class="about-image">
+                <div class="about-image">
 
-                <img
+                    <img src="assets/imagenes/erick2.png" alt="Erick Morales" loading="lazy">
 
-                    src="assets/imagenes/erick2.png"
+                </div>
 
-                    alt="Erick Morales"
-
-                    loading="lazy"
-
-                >
-
-            </div>
-
-            <!--=====================================
+                <!--=====================================
             CONTENIDO
             ======================================-->
 
-            <div class="about-content">
+                <div class="about-content">
 
-                <h2>
+                    <h2>
 
-                    Sobre mí
+                        Sobre mí
 
-                </h2>
+                    </h2>
 
-                <p>
+                    <p>
 
-                    Soy Erick Morales, desarrollador web apasionado
-                    por crear sitios modernos, rápidos y optimizados.
-                    Disfruto diseñando interfaces intuitivas,
-                    escribiendo código limpio y aprendiendo nuevas
-                    tecnologías para seguir creciendo
-                    profesionalmente.
+                        Soy estudiante de segundo curso del Grado Superior de Administración de Sistemas Informáticos en
+                        Red (ASIR). Me apasionan Linux, la automatización y el desarrollo web. Disfruto construyendo
+                        herramientas útiles, resolviendo problemas técnicos y aprendiendo nuevas tecnologías.
 
-                </p>
+                    </p>
 
-                <p>
+                    <p>
 
-                    Actualmente continúo ampliando mis conocimientos
-                    en desarrollo web, bases de datos, servidores y
-                    administración de sistemas mientras desarrollo
-                    proyectos personales y profesionales.
+                        Compagino mi formación con proyectos personales como Ziha Rueditas, que distribuyo mediante un
+                        repositorio APT firmado, y Ziha Orbital, mi proyecto final centrado en SDR. También realizo
+                        prácticas de redes, servicios Linux, virtualización y bases de datos.
 
-                </p>
+                    </p>
 
-                <!--=================================
+                    <!--=================================
                 CONTADORES
                 ==================================-->
 
-                <div class="about-cards">
+                    <div class="about-cards">
 
-                    <div class="about-card">
+                        <div class="about-card">
 
-                        <h3>
+                            <h3>
 
-                            <span
-                                class="counter"
-                                data-target="3">
+                                <span class="counter" data-target="4">
+                                    4
+                                </span>+
 
-                                0
+                            </h3>
 
-                            </span>+
+                            <span>
 
-                        </h3>
+                                Proyectos
 
-                        <span>
+                            </span>
 
-                            Proyectos
+                        </div>
 
-                        </span>
+                        <div class="about-card">
 
-                    </div>
+                            <h3>
 
-                    <div class="about-card">
+                                <span class="counter" data-target="19">
+                                    19
+                                </span>+
 
-                        <h3>
+                            </h3>
 
-                            <span
-                                class="counter"
-                                data-target="10">
+                            <span>
 
-                                0
+                                Tecnologías
 
-                            </span>+
+                            </span>
 
-                        </h3>
+                        </div>
 
-                        <span>
+                        <div class="about-card">
 
-                            Tecnologías
+                            <h3>
 
-                        </span>
+                                <span class="counter" data-target="2">
+                                    2
+                                </span>
 
-                    </div>
+                            </h3>
 
-                    <div class="about-card">
+                            <span>
 
-                        <h3>
+                                Versiones en APT
 
-                            <span
-                                class="counter"
-                                data-target="100">
+                            </span>
 
-                                0
-
-                            </span>%
-
-                        </h3>
-
-                        <span>
-
-                            Compromiso
-
-                        </span>
+                        </div>
 
                     </div>
 
-                </div>
-
-                <!--=================================
+                    <!--=================================
                 TECNOLOGÍAS
                 ==================================-->
 
-                <div class="skills">
+                    <div class="skills">
 
-                    <span>HTML5</span>
+                        <span>Linux</span>
 
-                    <span>CSS3</span>
+                        <span>Debian</span>
 
-                    <span>JavaScript</span>
+                        <span>Bash</span>
 
-                    <span>Git</span>
+                        <span>APT / dpkg</span>
 
-                    <span>GitHub</span>
+                        <span>GPG</span>
 
-                    <span>Linux</span>
+                        <span>Git</span>
 
-                    <span>MySQL</span>
+                        <span>GitHub</span>
 
-                    <span>Windows Server</span>
+                        <span>VirtualBox</span>
 
-                    <span>Cisco</span>
+                        <span>SSH</span>
 
-                    <span>Responsive Design</span>
+                        <span>DNS / BIND9</span>
 
-                </div>
+                        <span>DHCP / Kea</span>
 
-                <!--=================================
+                        <span>OpenLDAP</span>
+
+                        <span>Windows Server</span>
+
+                        <span>MySQL</span>
+
+                        <span>Cisco</span>
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Responsive Design</span>
+
+                    </div>
+
+                    <!--=================================
                 INFORMACIÓN EXTRA
                 ==================================-->
 
-                <div class="about-extra">
+                    <div class="about-extra">
 
-                    <div class="about-item">
+                        <div class="about-item">
 
-                        <i class="fa-solid fa-graduation-cap"></i>
+                            <i class="fa-solid fa-graduation-cap"></i>
 
-                        <div>
+                            <div>
 
-                            <strong>
+                                <strong>
 
-                                Formación
+                                    Formación
 
-                            </strong>
+                                </strong>
 
-                            <p>
+                                <p>
 
-                                Técnico Superior en Administración
-                                de Sistemas Informáticos en Red (ASIR).
+                                    Segundo curso del CFGS de Administración de Sistemas Informáticos en Red (ASIR),
+                                    actualmente en formación.
 
-                            </p>
+                                </p>
 
-                        </div>
-
-                    </div>
-
-                    <div class="about-item">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        <div>
-
-                            <strong>
-
-                                Ubicación
-
-                            </strong>
-
-                            <p>
-
-                                Madrid, España
-
-                            </p>
+                            </div>
 
                         </div>
 
-                    </div>
+                        <div class="about-item">
 
-                    <div class="about-item">
+                            <i class="fa-solid fa-location-dot"></i>
 
-                        <i class="fa-solid fa-rocket"></i>
+                            <div>
 
-                        <div>
+                                <strong>
 
-                            <strong>
+                                    Ubicación
 
-                                Objetivo
+                                </strong>
 
-                            </strong>
+                                <p>
 
-                            <p>
+                                    Madrid, España
 
-                                Incorporarme a un equipo donde pueda
-                                seguir creciendo como desarrollador y
-                                participar en proyectos innovadores.
+                                </p>
 
-                            </p>
+                            </div>
+
+                        </div>
+
+                        <div class="about-item">
+
+                            <i class="fa-solid fa-rocket"></i>
+
+                            <div>
+
+                                <strong>
+
+                                    Objetivo
+
+                                </strong>
+
+                                <p>
+
+                                    Incorporarme a un equipo de sistemas, soporte IT o desarrollo donde pueda aplicar lo
+                                    aprendido y seguir creciendo profesionalmente.
+
+                                </p>
+
+                            </div>
 
                         </div>
 
@@ -752,815 +713,696 @@ HEADER
 
         </div>
 
-    </div>
-
-</section>
-<!--======================================================
+    </section>
+    <!--======================================================
                     CERTIFICACIONES
 =======================================================-->
 
-<section id="certificaciones">
+    <section id="certificaciones">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section-title">
+            <div class="section-title">
 
-            <h2>Certificaciones</h2>
+                <h2>Certificaciones</h2>
 
-            <p>
-                Certificaciones y formación complementaria
-                relacionadas con sistemas, redes y tecnología.
-            </p>
+                <p>
+                    Certificaciones y formación complementaria
+                    relacionadas con sistemas, redes y tecnología.
+                </p>
 
-        </div>
+            </div>
 
-        <div class="certifications-grid">
+            <div class="certifications-grid">
 
-            <article class="certification-card">
+                <article class="certification-card">
 
-                <div class="certification-badge">
+                    <div class="certification-badge">
 
-                    <img
-                        src="assets/imagenes/certificado.jpg"
-                        alt="Certificado Cisco Computer Hardware Basics"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="certification-content">
-
-                    <div class="certification-company">
-
-                        <i class="fa-solid fa-certificate"></i>
-
-                        <span>
-                            Cisco Networking Academy
-                        </span>
+                        <img src="assets/imagenes/certificado.jpg" alt="Certificado Cisco Computer Hardware Basics"
+                            loading="lazy">
 
                     </div>
 
-                    <h3>
-                        Computer Hardware Basics
-                    </h3>
+                    <div class="certification-content">
 
-                    <p>
-                        Formación en montaje, mantenimiento
-                        y actualización de equipos informáticos,
-                        hardware y dispositivos.
-                    </p>
+                        <div class="certification-company">
 
-                    <div class="certification-tech">
+                            <i class="fa-solid fa-certificate"></i>
 
-                        <span>Cisco</span>
-                        <span>Hardware</span>
-                        <span>IT</span>
+                            <span>
+                                Cisco Networking Academy
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Computer Hardware Basics
+                        </h3>
+
+                        <p>
+                            Formación en montaje, mantenimiento
+                            y actualización de equipos informáticos,
+                            hardware y dispositivos.
+                        </p>
+
+                        <div class="certification-tech">
+
+                            <span>Cisco</span>
+                            <span>Hardware</span>
+                            <span>IT</span>
+
+                        </div>
+
+                        <span class="pending-link" aria-label="Enlace no configurado">Enlace pendiente</span>
 
                     </div>
 
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="certification-btn"
-                    >
+                </article>
 
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        Ver credencial
-
-                    </a>
-
-                </div>
-
-            </article>
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-
-<!--======================================================
+    <!--======================================================
                     CONTACTO
 =======================================================-->
 
-<section id="contacto">
+    <section id="contacto">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section-title">
+            <div class="section-title">
 
-            <h2>Contacto</h2>
+                <h2>Contacto</h2>
 
-            <p>
+                <p>
 
-                ¿Tienes un proyecto en mente o buscas un desarrollador
-                para tu equipo? Estaré encantado de hablar contigo.
+                    ¿Buscas un perfil junior de sistemas, soporte IT o desarrollo web para tu equipo? Estaré encantado
+                    de hablar contigo.
 
-            </p>
+                </p>
 
-        </div>
+            </div>
 
-        <div class="contact-container">
+            <div class="contact-container">
 
-            <!--=====================================
+                <!--=====================================
             TARJETA IZQUIERDA
             ======================================-->
 
-            <div class="contact-info">
+                <div class="contact-info">
 
-                <img
-                    src="assets/img/perfil.webp"
-                    alt="Erick Morales"
-                    class="contact-profile">
+                    <img src="assets/img/perfil.webp" alt="Erick Morales" class="contact-profile">
 
-                <div class="status">
+                    <div class="status">
 
-                    <span class="status-dot"></span>
+                        <span class="status-dot"></span>
 
-                    Disponible para trabajar
+                        Disponible para trabajar
+
+                    </div>
+
+                    <h2>
+
+                        Erick Morales
+
+                    </h2>
+
+                    <p>
+
+                        Me interesa participar en proyectos de administración de sistemas, automatización y desarrollo
+                        web. Estoy abierto a oportunidades junior y colaboraciones.
+
+                    </p>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <strong>Email</strong>
+
+                            <span>
+
+                                contacto@ziha.es
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <strong>Ubicación</strong>
+
+                            <span>
+
+                                Madrid · España
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <div class="contact-text">
+
+                            <strong>Respuesta</strong>
+
+                            <span>
+
+                                Menos de 24 horas
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="contact-services">
+
+                        <h3>
+
+                            Áreas de interés
+
+                        </h3>
+
+                        <ul>
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Desarrollo Web
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Diseño Responsive
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                Optimización SEO
+
+                            </li>
+
+                            <li>
+
+                                <i class="fa-solid fa-check"></i>
+
+                                UI / UX
+
+                            </li>
+
+                        </ul>
+
+                    </div>
 
                 </div>
 
+                <!--=====================================
+            FORMULARIO
+            ======================================-->
+
+                <form id="contact-form" class="contact-form" autocomplete="on">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="name">
+
+                                Nombre
+
+                            </label>
+
+                            <input id="name" name="name" type="text" required placeholder="Tu nombre">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">
+
+                                Correo electrónico
+
+                            </label>
+
+                            <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="subject">
+
+                            Asunto
+
+                        </label>
+
+                        <input id="subject" name="subject" type="text" required placeholder="¿En qué puedo ayudarte?">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">
+
+                            Mensaje
+
+                        </label>
+
+                        <textarea id="message" name="message" required placeholder="Cuéntame tu proyecto..."></textarea>
+
+                    </div>
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Enviar mensaje
+
+                    </button>
+
+                    <p class="form-status"></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--======================================================
+                    REDES SOCIALES
+=======================================================-->
+
+    <section id="redes">
+
+        <div class="container">
+
+            <div class="section-title">
+
                 <h2>
 
-                    Erick Morales
+                    Encuéntrame en
 
                 </h2>
 
                 <p>
 
-                    Desarrollo páginas web modernas,
-                    optimizadas y responsive.
-                    Si tienes una idea o proyecto,
-                    podemos hacerlo realidad.
+                    Puedes conocer más sobre mi trabajo,
+                    contactar conmigo o descargar mi currículum.
 
                 </p>
 
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-envelope"></i>
-
-                    </div>
-
-                    <div class="contact-text">
-
-                        <strong>Email</strong>
-
-                        <span>
-
-                            contacto@ziha.es
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-location-dot"></i>
-
-                    </div>
-
-                    <div class="contact-text">
-
-                        <strong>Ubicación</strong>
-
-                        <span>
-
-                            Madrid · España
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-
-                        <i class="fa-solid fa-clock"></i>
-
-                    </div>
-
-                    <div class="contact-text">
-
-                        <strong>Respuesta</strong>
-
-                        <span>
-
-                            Menos de 24 horas
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-                <hr>
-
-                <div class="contact-services">
-
-                    <h3>
-
-                        Puedo ayudarte con
-
-                    </h3>
-
-                    <ul>
-
-                        <li>
-
-                            <i class="fa-solid fa-check"></i>
-
-                            Desarrollo Web
-
-                        </li>
-
-                        <li>
-
-                            <i class="fa-solid fa-check"></i>
-
-                            Diseño Responsive
-
-                        </li>
-
-                        <li>
-
-                            <i class="fa-solid fa-check"></i>
-
-                            Optimización SEO
-
-                        </li>
-
-                        <li>
-
-                            <i class="fa-solid fa-check"></i>
-
-                            UI / UX
-
-                        </li>
-
-                    </ul>
-
-                </div>
-
             </div>
 
-            <!--=====================================
-            FORMULARIO
-            ======================================-->
+            <div class="social-grid">
 
-            <form
-
-                id="contact-form"
-
-                class="contact-form"
-
-                autocomplete="on"
-
-            >
-
-                <div class="form-grid">
-
-                    <div class="form-group">
-
-                        <label for="name">
-
-                            Nombre
-
-                        </label>
-
-                        <input
-
-                            id="name"
-
-                            name="name"
-
-                            type="text"
-
-                            required
-
-                            placeholder="Tu nombre"
-
-                        >
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="email">
-
-                            Correo electrónico
-
-                        </label>
-
-                        <input
-
-                            id="email"
-
-                            name="email"
-
-                            type="email"
-
-                            required
-
-                            placeholder="correo@ejemplo.com"
-
-                        >
-
-                    </div>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="subject">
-
-                        Asunto
-
-                    </label>
-
-                    <input
-
-                        id="subject"
-
-                        name="subject"
-
-                        type="text"
-
-                        required
-
-                        placeholder="¿En qué puedo ayudarte?"
-
-                    >
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="message">
-
-                        Mensaje
-
-                    </label>
-
-                    <textarea
-
-                        id="message"
-
-                        name="message"
-
-                        required
-
-                        placeholder="Cuéntame tu proyecto..."
-
-                    ></textarea>
-
-                </div>
-
-                <button type="submit">
-
-                    <i class="fa-solid fa-paper-plane"></i>
-
-                    Enviar mensaje
-
-                </button>
-
-                <p class="form-status"></p>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-<!--======================================================
-                    REDES SOCIALES
-=======================================================-->
-
-<section id="redes">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>
-
-                Encuéntrame en
-
-            </h2>
-
-            <p>
-
-                Puedes conocer más sobre mi trabajo,
-                contactar conmigo o descargar mi currículum.
-
-            </p>
-
-        </div>
-
-        <div class="social-grid">
-
-            <!--=====================================
+                <!--=====================================
             GITHUB
             ======================================-->
 
-            <article class="social-card">
-
-                <i class="fa-brands fa-github"></i>
-
-                <h3>
-
-                    GitHub
-
-                </h3>
-
-                <p>
-
-                    Repositorios, proyectos personales
-                    y código fuente.
-
-                </p>
-
-                <a
-
-                    href="https://github.com/ErickDMP"
-
-                    target="_blank"
-
-                    class="social-btn">
-
-                    Visitar perfil
-
-                </a>
-
-            </article>
-
-            <!--=====================================
-            LINKEDIN
-            ======================================-->
-
-            <article class="social-card">
-
-                <i class="fa-brands fa-linkedin"></i>
-
-                <h3>
-
-                    LinkedIn
-
-                </h3>
-
-                <p>
-
-                    Mi trayectoria profesional,
-                    experiencia y formación.
-
-                </p>
-
-                <a
-
-                    href="#"
-
-                    target="_blank"
-
-                    class="social-btn">
-
-                    Ver perfil
-
-                </a>
-
-            </article>
-
-            <!--=====================================
-            EMAIL
-            ======================================-->
-
-            <article class="social-card">
-
-                <i class="fa-solid fa-envelope"></i>
-
-                <h3>
-
-                    Email
-
-                </h3>
-
-                <p>
-
-                    ¿Quieres colaborar o realizar
-                    una consulta?
-
-                </p>
-
-                <a
-
-                    href="mailto:contacto@ziha.es"
-
-                    class="social-btn">
-
-                    Enviar correo
-
-                </a>
-
-            </article>
-
-            <!--=====================================
-            INSTAGRAM
-            ======================================-->
-
-            <article class="social-card">
-
-                <i class="fa-brands fa-instagram"></i>
-
-                <h3>
-
-                    Instagram
-
-                </h3>
-
-                <p>
-
-                    Contenido relacionado con
-                    desarrollo y proyectos.
-
-                </p>
-
-                <a
-
-                    href="#"
-
-                    target="_blank"
-
-                    class="social-btn">
-
-                    Seguir
-
-                </a>
-
-            </article>
-
-            <!--=====================================
-            CURRÍCULUM
-            ======================================-->
-
-            <article class="social-card">
-
-                <i class="fa-solid fa-file-arrow-down"></i>
-
-                <h3>
-
-                    Currículum
-
-                </h3>
-
-                <p>
-
-                    Descarga mi CV actualizado
-                    en formato PDF.
-
-                </p>
-
-                <a
-
-                    href="assets/cv/Erick_Morales_CV.pdf"
-
-                    download
-
-                    class="social-btn">
-
-                    Descargar CV
-
-                </a>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!--======================================================
-                        FOOTER
-=======================================================-->
-
-<footer>
-
-    <div class="footer-container">
-
-        <!--=====================================
-        MARCA
-        ======================================-->
-
-        <div class="footer-brand">
-
-            <h2>
-
-                Erick<span>.</span>
-
-            </h2>
-
-            <p>
-
-                Desarrollador Web apasionado por crear
-                experiencias digitales modernas, rápidas
-                y accesibles.
-
-            </p>
-
-            <div class="footer-social">
-
-                <a
-                    href="https://github.com/ErickDMP"
-                    target="_blank"
-                    aria-label="GitHub">
+                <article class="social-card">
 
                     <i class="fa-brands fa-github"></i>
 
-                </a>
+                    <h3>
 
-                <a
-                    href="#"
-                    target="_blank"
-                    aria-label="LinkedIn">
+                        GitHub
+
+                    </h3>
+
+                    <p>
+
+                        Repositorios, proyectos personales
+                        y código fuente.
+
+                    </p>
+
+                    <a href="https://github.com/ErickDMP" target="_blank" rel="noopener noreferrer" class="social-btn">
+
+                        Visitar perfil
+
+                    </a>
+
+                </article>
+
+                <!--=====================================
+            LINKEDIN
+            ======================================-->
+
+                <article class="social-card">
 
                     <i class="fa-brands fa-linkedin"></i>
 
-                </a>
+                    <h3>
 
-                <a
-                    href="mailto:contacto@ziha.es"
-                    aria-label="Email">
+                        LinkedIn
+
+                    </h3>
+
+                    <p>
+
+                        Mi trayectoria profesional,
+                        experiencia y formación.
+
+                    </p>
+
+                    <a href="https://www.linkedin.com/in/erick-daniel-morales-paredes-asir/" target="_blank"
+                        rel="noopener noreferrer" class="social-btn">
+
+                        Ver perfil
+
+                    </a>
+
+                </article>
+
+                <!--=====================================
+            EMAIL
+            ======================================-->
+
+                <article class="social-card">
 
                     <i class="fa-solid fa-envelope"></i>
 
-                </a>
+                    <h3>
 
-                <a
-                    href="#"
-                    target="_blank"
-                    aria-label="Instagram">
+                        Email
+
+                    </h3>
+
+                    <p>
+
+                        ¿Quieres colaborar o realizar
+                        una consulta?
+
+                    </p>
+
+                    <a href="mailto:contacto@ziha.es" class="social-btn">
+
+                        Enviar correo
+
+                    </a>
+
+                </article>
+
+                <!--=====================================
+            INSTAGRAM
+            ======================================-->
+
+                <article class="social-card">
 
                     <i class="fa-brands fa-instagram"></i>
 
-                </a>
+                    <h3>
+
+                        Instagram
+
+                    </h3>
+
+                    <p>
+
+                        Contenido relacionado con
+                        desarrollo y proyectos.
+
+                    </p>
+
+                    <span class="pending-link" aria-label="Enlace no configurado">Enlace pendiente</span>
+
+                </article>
+
+                <!--=====================================
+            CURRÍCULUM
+            ======================================-->
+
+                <article class="social-card">
+
+                    <i class="fa-solid fa-file-arrow-down"></i>
+
+                    <h3>
+
+                        Currículum
+
+                    </h3>
+
+                    <p>
+
+                        Descarga mi CV actualizado
+                        en formato PDF.
+
+                    </p>
+
+                    <div class="cv-buttons">
+
+                        <a href="assets/cv/Erick_Morales_CV.pdf" target="_blank" rel="noopener noreferrer"
+                            class="social-btn">
+
+                            <i class="fa-solid fa-eye"></i>
+                            Ver CV
+
+                        </a>
+
+                        <a href="assets/cv/Erick_Morales_CV.pdf" class="social-btn cv-download" download>
+
+                            <i class="fa-solid fa-download"></i>
+                            Descargar CV
+
+                        </a>
+
+                    </div>
+                </article>
 
             </div>
 
         </div>
 
-        <!--=====================================
+    </section>
+    <!--======================================================
+                        FOOTER
+=======================================================-->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <!--=====================================
+        MARCA
+        ======================================-->
+
+            <div class="footer-brand">
+
+                <h2>
+
+                    Erick<span>.</span>
+
+                </h2>
+
+                <p>
+
+                    Estudiante de ASIR. Sistemas Linux, automatización, redes y desarrollo web.
+
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="https://github.com/ErickDMP" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/erick-daniel-morales-paredes-asir/" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="mailto:contacto@ziha.es" aria-label="Email">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                    <span class="pending-link" aria-label="Enlace no configurado"><i
+                            class="fa-brands fa-instagram"></i></span>
+
+                </div>
+
+            </div>
+
+            <!--=====================================
         NAVEGACIÓN
         ======================================-->
 
-        <div class="footer-column">
+            <div class="footer-column">
 
-            <h3>
+                <h3>
 
-                Navegación
+                    Navegación
 
-            </h3>
+                </h3>
 
-            <ul>
+                <ul>
 
-                <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
 
-                <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
 
-                <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
 
-                <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
 
-                <li><a href="#redes">Redes</a></li>
+                    <li><a href="#redes">Redes</a></li>
 
-            </ul>
+                </ul>
 
-        </div>
+            </div>
 
-        <!--=====================================
+            <!--=====================================
         CONTACTO
         ======================================-->
 
-        <div class="footer-column">
+            <div class="footer-column">
 
-            <h3>
+                <h3>
 
-                Contacto
+                    Contacto
 
-            </h3>
+                </h3>
 
-            <ul>
+                <ul>
 
-                <li>
+                    <li>
 
-                    <a href="mailto:contacto@ziha.es">
+                        <a href="mailto:contacto@ziha.es">
 
-                        contacto@ziha.es
+                            contacto@ziha.es
 
-                    </a>
+                        </a>
 
-                </li>
+                    </li>
 
-                <li>
+                    <li>
 
-                    <a href="#">
+                        <span class="pending-link" aria-label="Enlace no configurado">Madrid, España</span>
 
-                        Madrid, España
+                    </li>
 
-                    </a>
+                    <li>
 
-                </li>
+                        <a href="assets/cv/Erick_Morales_CV.pdf" download>
 
-                <li>
+                            Descargar CV
 
-                    <a href="assets/cv/Erick_Morales_CV.pdf" download>
+                        </a>
 
-                        Descargar CV
+                    </li>
 
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <!--=====================================
-    FOOTER INFERIOR
-    ======================================-->
-
-    <div class="container">
-
-        <div class="footer-bottom">
-
-            <p>
-
-                © <span id="year"></span>
-                Erick Morales. Todos los derechos reservados.
-
-            </p>
-
-            <div class="footer-bottom-links">
-
-                <a href="#inicio">
-
-                    Volver al inicio
-
-                </a>
-
-                <a href="#contacto">
-
-                    Contactar
-
-                </a>
+                </ul>
 
             </div>
 
         </div>
 
-    </div>
+        <!--=====================================
+    FOOTER INFERIOR
+    ======================================-->
 
-</footer>
+        <div class="container">
 
-<!--=====================================
+            <div class="footer-bottom">
+
+                <p>
+
+                    © <span id="year"></span>
+                    Erick Morales. Todos los derechos reservados.
+
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#inicio">
+
+                        Volver al inicio
+
+                    </a>
+
+                    <a href="#contacto">
+
+                        Contactar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=====================================
 BOTÓN VOLVER ARRIBA
 ======================================-->
 
-<a
+    <a href="#inicio" class="back-top" aria-label="Volver arriba">
 
-    href="#inicio"
+        <i class="fa-solid fa-arrow-up"></i>
 
-    class="back-top"
-
-    aria-label="Volver arriba">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</a>
-<!--======================================================
+    </a>
+    <!--======================================================
                     SCRIPTS
 =======================================================-->
 
-<!-- Font Awesome (opcional si ya está cargado en el <head>) -->
+    <!-- Font Awesome (opcional si ya está cargado en el <head>) -->
 
 
-<!-- EmailJS -->
-<script
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 
-<!-- JavaScript principal -->
-<script src="assets/js/script.js"></script>
+    <!-- JavaScript principal -->
+    <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
